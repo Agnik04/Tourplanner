@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in and Sign up page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Create New Account</h1>
+
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="namefield">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <span class="material-symbols-outlined">mail</span>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <p id="ForgotPass">
+                        Forgot password
+                        <a href="#">Click here</a>
+                    </p>
+                </div>
+
+
+                <div class="btn-field">
+                    <button type="button" id="signupbtn">Sign up</button>
+                    <button type="button" id="signinbtn" class="disable">Sign in</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        let signupbtn = document.getElementById("signupbtn");
+        let signinbtn = document.getElementById("signinbtn");
+        let namefield = document.getElementById("namefield");
+        let title = document.getElementById("title");
+        let Forgotpass = document.getElementById("ForgotPass");
+
+
+        signinbtn.onclick = function(){
+            namefield.style.maxHeight = "0";
+            Forgotpass.style.maxHeight="60px";
+            title.innerHTML = "Sign In";
+            signupbtn.classList.add("disable");
+            signinbtn.classList.remove("disable");
+    
+
+
+        }
+
+        signupbtn.onclick = function(){
+            namefield.style.maxHeight = "60px";
+            // Forgotpass.style.maxHeight="0";
+            title.innerHTML = "Sign UP";
+            signupbtn.classList.remove("disable");
+            signinbtn.classList.add("disable");
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
