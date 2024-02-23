@@ -1,3 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    /* overflow: hidden; */
+    /* height: 100vh; */
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#maindiv {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img2.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#textdiv {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 105px;
+    left: 1020px;
+    color: white;
+    text-align: right;
+}
+
+#textdiv h1 {
+    font-size: 75px;
+    font-weight: 700;
+}
+
+#textdive p {
+    font-size: 20px;
+    line-height: 1.35;
+    word-spacing: 5px;
+}
+
+.navbar {
+
+    width: 100%;
+    height: 110px;
+    padding: 20px 2px 15px 20px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo #title{
+
+    color : white;
+    font-family: "Monteserrat", sans-serif;
+    font-size : 40px;
+    font-weight: 700;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    border: 2px solid whitesmoke;
+    margin-right: 25px;
+    font-size: 18px;
+    color: whitesmoke; 
+    padding: 10px;   
+}
+
+.pill
+{
+    font-size: 18px;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pill a {
+    color: black;
+}
+
+.largecircle {
+    height: 620px;
+    width: 620px;
+    border-radius: 50%;
+    background-image: url(huts.jpg);
+    background-size: cover;
+    position: relative;
+    bottom: 250px;
+    right: 120px;
+    z-index: 2;
+}
+
+#whitecircle1 {
+    height: 650px;
+    width: 650px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    right: 1015px;
+    z-index: 1;
+}
+
+
+.smallcircle {
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    background-image: url(small.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 325px;
+    left: 355px;
+    z-index: 4;
+}
+
+
+#whitecircle2 {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 315px;
+    left: 350px;
+    z-index: 3;
+}
+
+/*Tanmay's Code*/
+
 *{
     margin: 0;
     padding: 0;
